@@ -4,4 +4,75 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  height: 80px;
+}
+.navbar .container-fluid a {
+  color: #fff;
+}
+.navbar .container-fluid a:hover {
+  color: rgb(230, 0, 0);
+}
+.navbar .container-fluid .navbar-collapse {
+  left: 25%;
+}
+.navbar .container-fluid .icons {
+  right: 3%;
+}
+.navbar .container-fluid .icons a {
+  font-size: 20px;
+  border-right: 1px solid #fff;
+  margin: 0 10px;
+}
+
+.main-section {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-image: url(./Images/pexels-yury-kim-585419.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.main-section .cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.main-section .cover span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(18, 18, 245);
+  opacity: 0.5;
+}
+.main-section .text {
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.main-section .text h2 {
+  font-size: 50px;
+  color: #fff;
+}
+.main-section .text h2::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 3px;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.main-section .text-info {
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+.main-section .text-info p {
+  text-align: center;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
