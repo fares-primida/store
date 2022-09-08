@@ -1,6 +1,9 @@
 // call roboto font from google fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+// ============
+// variables
+$main-blue: rgb(0, 68, 255);
+// ========
 * {
     padding: 0;
     margin: 0;
@@ -76,6 +79,108 @@
         p {
             text-align: center;
             color: #fff;
+        }
+    }
+}
+.our {
+    width: 100%;
+    height: 100vh;
+    .our-info {
+        width: 60%;
+        height: 100%;
+        h2 {
+            position: absolute;
+            color: $main-blue;
+            padding: 5px;
+        }
+        h2::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            bottom: -20px;
+            width: 90px;
+            height: 3px;
+            background-color: $main-blue;
+        }
+        .pargraphs {
+            top: 25%;
+        }
+    }
+    .form {
+        right: 2%;
+        width:30%;
+        height: 100%;
+        background-color: rgb(228, 236, 236);
+        overflow: hidden;
+        h2 {
+            color: $main-blue;
+            a {
+                text-decoration: none;
+                color: $main-blue;
+            }
+        }
+        form {
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            height: 60%;
+            input {
+                font-size: 12px;
+                width: 280px;
+                height: 40px;
+                border-radius: 20px;
+            }
+            .suggestions {
+                a {
+                    font-size: .8rem;
+                    color: $main-blue;
+                }
+            }
+            .sumbit-btn {
+                color: #fff;
+                border-radius: 20px;
+                background-color: $main-blue;
+            }
+        }
+        .dini {
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 30%;
+            font-size: 1.2rem;
+            color: #000;
+        }
+        .dini::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 135px;
+            height: 2px;
+            background-color: #ddd;
+            left: -135px;
+        }
+        .dini::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 135px;
+            height: 2px;
+            background-color: #ddd;
+            right: -135px;
+        }
+        .reg-btn {
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgb(145, 145, 7);
+            border-radius: 20px;
+            color: #000;
+            transition: .7s ease;
+        }
+        .reg-btn:hover {
+            color: #fff;
+            background-color: $main-blue;
         }
     }
 }

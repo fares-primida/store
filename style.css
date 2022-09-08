@@ -75,4 +75,105 @@
 .main-section .text-info p {
   text-align: center;
   color: #fff;
+}
+
+.our {
+  width: 100%;
+  height: 100vh;
+}
+.our .our-info {
+  width: 60%;
+  height: 100%;
+}
+.our .our-info h2 {
+  position: absolute;
+  color: rgb(0, 68, 255);
+  padding: 5px;
+}
+.our .our-info h2::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: -20px;
+  width: 90px;
+  height: 3px;
+  background-color: rgb(0, 68, 255);
+}
+.our .our-info .pargraphs {
+  top: 25%;
+}
+.our .form {
+  right: 2%;
+  width: 30%;
+  height: 100%;
+  background-color: rgb(228, 236, 236);
+  overflow: hidden;
+}
+.our .form h2 {
+  color: rgb(0, 68, 255);
+}
+.our .form h2 a {
+  text-decoration: none;
+  color: rgb(0, 68, 255);
+}
+.our .form form {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 60%;
+}
+.our .form form input {
+  font-size: 12px;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+}
+.our .form form .suggestions a {
+  font-size: 0.8rem;
+  color: rgb(0, 68, 255);
+}
+.our .form form .sumbit-btn {
+  color: #fff;
+  border-radius: 20px;
+  background-color: rgb(0, 68, 255);
+}
+.our .form .dini {
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 30%;
+  font-size: 1.2rem;
+  color: #000;
+}
+.our .form .dini::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 135px;
+  height: 2px;
+  background-color: #ddd;
+  left: -135px;
+}
+.our .form .dini::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 135px;
+  height: 2px;
+  background-color: #ddd;
+  right: -135px;
+}
+.our .form .reg-btn {
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(145, 145, 7);
+  border-radius: 20px;
+  color: #000;
+  transition: 0.7s ease;
+}
+.our .form .reg-btn:hover {
+  color: #fff;
+  background-color: rgb(0, 68, 255);
 }/*# sourceMappingURL=style.css.map */
