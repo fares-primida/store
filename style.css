@@ -136,6 +136,7 @@
   color: #fff;
   border-radius: 20px;
   background-color: rgb(0, 68, 255);
+  cursor: pointer;
 }
 .our .form .dini {
   left: 50%;
@@ -176,4 +177,60 @@
 .our .form .reg-btn:hover {
   color: #fff;
   background-color: rgb(0, 68, 255);
+}
+
+.products {
+  width: 100%;
+  height: 100vh;
+}
+.products .controlls {
+  width: 100%;
+  height: 100px;
+}
+.products .controlls a {
+  font-size: 40px;
+  text-decoration: none;
+}
+.products .controlls::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 2px;
+  bottom: 10px;
+  background-color: rgb(163, 157, 157);
+}
+.products .products-carts {
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+}
+.products .products-carts .carts-container {
+  width: 100%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.products .products-carts .carts-container .slider {
+  left: 0;
+}
+.products .products-carts .carts-container .cart {
+  width: 300px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  margin: 0 10px;
+}
+.products .products-carts .carts-container .cart .image {
+  width: 100%;
+  height: 75%;
+  border-radius: 20px;
+}
+.products .products-carts .carts-container::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
