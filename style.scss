@@ -250,4 +250,12 @@ $main-blue: rgb(0, 68, 255);
             height: 2px;
             background: $main-blue;
         }
+        .ser {
+            width: 100%;
+            height: 80%;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $main-blue;
+            
+        }
     }
