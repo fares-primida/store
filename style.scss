@@ -16,9 +16,6 @@ $main-blue: rgb(0, 68, 255);
         a {
             color: #fff;
         }
-        a:hover {
-            color: rgb(230, 0, 0);
-        }
         .navbar-collapse {
             left: 25%;
         }
@@ -187,56 +184,70 @@ $main-blue: rgb(0, 68, 255);
 }
 .products {
     width: 100%;
-    height: 100vh;
-    .controlls {
-        width: 100%;
-        height: 100px;
-        a {
-            font-size: 40px;
-            text-decoration: none;
-        }
+    height: fit-content;
+    .products-title {
+        color: $main-blue;
     }
-    .controlls::before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 95%;
-        height: 2px;
-        bottom: 10px;
-        background-color: rgb(163, 157, 157);
-    }
-    .products-carts {
-        bottom: 0;
-        width: 100%;
-        height: 80%;
-        .carts-container {
-            width: 100%;
-            height: 80%;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50% , -50%);
-            overflow-x: scroll;
-            overflow-y: hidden;
-            .slider {
-                left: 0;
-            }
-            .cart {
-                width: 300px;
-                height: 350px;
-                background-color: #fff;
+    .carts-container {
+        .cart {
+            border-radius: 20px;
+            width: 300px;
+            height: 350px;
+            background-color: #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+            margin: 15px 15px;
+            .cart-image {
+                width: 100%;
+                height: 60%;
                 border-radius: 20px;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
-                margin: 0 10px;
-                .image {
-                    width: 100%;
-                    height: 75%;
+                img {
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 100%
+                }
+            }
+            .cart-info {
+                button {
+                    position: absolute;
+                    left: 18%;
+                    top: 98%;
+                    transform: translateX(-50% , -50%);
+                    width: 200px;
+                    border: none;
+                    background-color: $main-blue;
                     border-radius: 20px;
-                } 
+                    font-weight: 800;
+                    transition: .7s ease-in-out;
+                }
+                button:hover {
+                    background-color: green;
+                }
+            }
+            .price {
+                color: #fff;
+                top:0;
+                background-color: $main-blue;
             }
         }
-        .carts-container::-webkit-scrollbar {
-            display: none;
+    }
+    }
+    .services {
+        width: 100%;
+        height: 100vh;
+        .services-title {
+            left: 50%;
+            transform: translateX(-50%);
+            color: $main-blue;
+        }
+        .services-title::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+            width: 100px;
+            height: 2px;
+            background: $main-blue;
         }
     }
-}
