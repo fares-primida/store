@@ -228,6 +228,7 @@ $main-blue: rgb(0, 68, 255);
                 color: #fff;
                 top:0;
                 background-color: $main-blue;
+                border-radius: 20px 0 0 0;
             }
         }
     }
@@ -259,7 +260,7 @@ $main-blue: rgb(0, 68, 255);
                     box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
                     background-color: #fff;
                     border-radius: 20px;
-                    margin: 10px;
+                    margin: 10px 30px;
                     .ser-cart-icon {
                         width: 100%;
                         height: 60%;
