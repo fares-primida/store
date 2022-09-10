@@ -279,3 +279,44 @@ $main-blue: rgb(0, 68, 255);
                 }
             }
     }
+
+    .SignUp {
+        width: 100%;
+        height: 20vh;
+        background-color: #222;
+        .SignUp-info {
+            margin: 10px 30px;
+            h2 {
+                color: #fff;
+            }
+            p {
+                color: #fff;
+            }
+        }
+        .SignUp-input {
+            margin: 10px 30px;
+            input {
+                border-radius: 20px;
+                padding: 5px;
+                width: 350px;
+                height: 70px;
+            }
+        }
+        .sumbit-button {
+            button {
+                width: 100px;
+                height: 50px;
+                padding: 5px 15px;
+                border-radius: 20px;
+                background-color: $main-blue;
+                color: #fff;
+                cursor: pointer;
+                transition: .5s ease-in-out;
+            }
+            button:hover {
+                background-color: yellowgreen;
+                color: #000;
+                transform: scale(1.1);
+            }
+        }
+    }
