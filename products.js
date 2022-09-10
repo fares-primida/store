@@ -2,7 +2,6 @@
 let CartsContainer = document.querySelector(".carts-container")
 
 
-
 function GetData() {
     let myRquest = new XMLHttpRequest
 
@@ -10,21 +9,21 @@ function GetData() {
         if (this.readyState === 4 && this.status === 200) {
             let Data = JSON.parse(this.responseText)
 
-            let Cartsq = Data.length
-
-            CreateCarts(Data , Cartsq)
+            CreateCarts(Data[0])
         }
     }
 
     myRquest.open("Get" , "./products.json" , true)
     myRquest.send()
 }
+GetData()
 
-function CreateCarts(obj , num) {
-    for (let i = 1; i <= num; i++) {
+function CreateCarts(obj) {
+    for (let i = 1; i <= 12; i++) {
         // create the div cart container
         let Cart = document.createElement('div')
-        Cart.classList.add("cart position-relative")
+        Cart.classList.add("cart")
+        Cart.classList.add("position-relative")
 
         // create the image div container
         let ImageDiv = document.createElement('div')
@@ -43,12 +42,18 @@ function CreateCarts(obj , num) {
 
         // create the product name 
         let CartInfo = document.createElement('div')
-        CartInfo.classList.add('cart-info position-relative text-capitalize text-center d-flex flex-column font-weight-bold')
+        CartInfo.classList.add('cart-info')
+        CartInfo.classList.add('position-relative')
+        CartInfo.classList.add('font-weight-bold')
+        CartInfo.classList.add('text-capitalize')
+        CartInfo.classList.add('d-flex')
+        CartInfo.classList.add('flex-column')
 
         // create the text
         let H4 = document.createElement('h4')
-        H4.classList.add('text-center mb-4')
-        H4.innerText = document.createTextNode(obj[`cardinfo_${i}`])
+        H4.classList.add('text-center')
+        H4.classList.add('mb-4')
+        H4.innerHTML = obj[`cardinfo_${i}`]
         
         // append the text to Cart Info Div
         CartInfo.appendChild(H4)
@@ -58,11 +63,14 @@ function CreateCarts(obj , num) {
 
         // create the price div
         let Price = document.createElement("div")
-        Price.classList.add('price position-absolute py-2 px-4')
+        Price.classList.add('price')
+        Price.classList.add('position-absolute')
+        Price.classList.add('py-2')
+        Price.classList.add('px-4')
 
         // create th price text
         let Pspan = document.createElement('span')
-        Pspan.innerText = document.createTextNode(obj[`price_${i}`])
+        Pspan.innerHTML = obj[`price_${i}`]
 
         // append the price text to the price div
         Price.appendChild(Pspan)
@@ -74,7 +82,12 @@ function CreateCarts(obj , num) {
         let Button = document.createElement('button')
         Button.innerText = 'View'
 
+        // append the button to the cart info div
+        CartInfo.appendChild(Button)
+
         // append the Button to the card
-        Cart.appendChild('Button')
+
+        // append the cart to CartsContainer
+        CartsContainer.appendChild(Cart)
     }
 }
