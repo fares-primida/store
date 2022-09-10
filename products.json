@@ -1,0 +1,52 @@
+[
+    {
+        "cardImage_1" : "./Images/ryan-hoffman-6Nub980bI3I-unsplash.jpg",
+        "cardinfo_1" : "T Shirt",
+        "price_1" : "$15",
+        
+        "cardImage_2" : "./Images/2.jpg",
+        "cardinfo_2" : "T Shirt",
+        "price_2" : "$15",
+        
+        "cardImage_3" : "./Images/ryan-hoffman-6Nub980bI3I-unsplash.jpg",
+        "cardinfo_3" : "T Shirt",
+        "price_3" : "$15",
+        
+        "cardImage_4" : "./Images/2.jpg",
+        "cardinfo_4" : "T Shirt",
+        "price_4" : "$15",
+        
+        "cardImage_5" : "./Images/ryan-hoffman-6Nub980bI3I-unsplash.jpg",
+        "cardinfo_5" : "T Shirt",
+        "price_5" : "$15",
+        
+        "cardImage_6" : "./Images/2.jpg",
+        "cardinfo_6" : "T Shirt",
+        "price_6" : "$15",
+        
+        "cardImage_7" : "./Images/ryan-hoffman-6Nub980bI3I-unsplash.jpg",
+        "cardinfo_7" : "T Shirt",
+        "price_7" : "$15",
+        
+        "cardImage_8" : "./Images/2.jpg",
+        "cardinfo_8" : "T Shirt",
+        "price_8" : "$15",
+        
+        "cardImage_9" : "./Images/ryan-hoffman-6Nub980bI3I-unsplash.jpg",
+        "cardinfo_9" : "T Shirt",
+        "price_9" : "$15",
+        
+        "cardImage_10" : "./Images/2.jpg",
+        "cardinfo_10" : "T Shirt",
+        "price_10" : "$15",
+        
+        "cardImage_11" : "./Images/ryan-hoffman-6Nub980bI3I-unsplash.jpg",
+        "cardinfo_11" : "T Shirt",
+        "price_11" : "$15",
+        
+        "cardImage_12" : "./Images/2.jpg",
+        "cardinfo_12" : "T Shirt",
+        "price_12" : "$15"
+        
+    }
+]
