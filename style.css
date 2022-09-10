@@ -316,7 +316,9 @@
 
 footer {
   width: 100%;
-  height: 70vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #111;
 }
 footer .about {
@@ -354,4 +356,34 @@ footer .about::before {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+footer .contact {
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  padding: 30px;
+}
+footer .contact .contact-cart {
+  top: 25%;
+}
+footer .contact .contact-cart .name {
+  color: #777;
+}
+footer .contact .contact-cart .social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin: 0 5px;
+  color: #777;
+  transition: 0.1s ease-in-out;
+}
+footer .contact .contact-cart .social-icons a:hover {
+  color: rgb(0, 68, 255);
+}
+footer .contact .contact-cart-2 {
+  bottom: 20%;
+}
+footer .contact .contact-cart-2 h2 {
+  font-size: 20px;
+  color: #777;
 }/*# sourceMappingURL=style.css.map */
