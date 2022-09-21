@@ -19,7 +19,7 @@ function GetData() {
 GetData()
 
 function CreateCarts(obj) {
-    for (let i = 1; i <= 12; i++) {
+    for (let i = 1; i <= 8; i++) {
         // create the div cart container
         let Cart = document.createElement('div')
         Cart.classList.add("cart")
